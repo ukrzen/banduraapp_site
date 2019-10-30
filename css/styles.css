@@ -1,0 +1,98 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+    color: #1e1f23;
+    background: url("../img/background.jpg") top center black no-repeat fixed !important;
+
+
+}
+* {
+    box-sizing:border-box;
+}
+
+section.overview header {
+    font-size: 46px;
+}
+section header {
+    font-size: 36px;
+
+    font-weight: 600;
+    letter-spacing: -.005em;
+     white-space: nowrap;
+    width:100%;
+    text-align:center;
+    padding-bottom: 27px;
+
+}
+
+section h3 {
+    font-size: 23px;
+    font-weight: 400;
+    opacity: 0.8;
+    padding:0px;
+    margin-top: 0px;
+
+    display: block;
+
+}
+
+section {
+    font-size:40px;
+    margin:0px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left:100px;
+    padding-right: 100px;
+    width: 100vw;
+
+
+}
+section.overview {
+
+}
+section.overview img {
+    max-height:500px;
+}
+section.overview .mobile {
+    height:100vh;
+}
+section.overview .store {
+    height:48px;
+}
+section {
+    /*background: #1e1f23 !important;*/
+
+}
+section * {
+    color:white;
+}
+section {
+    min-height:300px;
+
+
+}
+.flex {
+    display:flex;
+}
+.flex > * {
+    flex:1
+}
+.support img {
+    height:150px;
+    margin-right:30px;
+
+}
+.instruments img {
+    height:300px;
+    margin-right:30px;
+
+}
+.container {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+}
