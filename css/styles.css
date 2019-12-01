@@ -56,6 +56,7 @@ section  b {
 section.overview img {
     max-height:500px;
     margin-top:16px;
+
 }
 section.overview .mobile {
     height:100vh;
@@ -79,7 +80,7 @@ section {
     display:flex;
     margin-top:20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .flex {
         flex-direction: column;
     }
@@ -112,9 +113,31 @@ section {
     position: relative;
     perspective: 1000px;
 }
-@media (max-width:500px) {
+@media (max-width:600px) {
     .flex {
         order: 1;
+    }
+    .mobile {
+        max-width:60vw !important;
+        height: auto !important;;
+    }
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../img/background.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    body {
+        background-image: none;
     }
 }
 .avatar {
