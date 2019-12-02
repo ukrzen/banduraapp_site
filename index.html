@@ -55,18 +55,45 @@
 
 
     <div>
-        <a href="https://apps.apple.com/us/app/bandura/id1485258091" target="_blank">
+        <a href="https://apps.apple.com/us/app/bandura/id1485258091" target="_blank" class="device-android hidden-android ">
             <img src="./img/app_store.png" class="store"></a>
         </a>
-       <a href="https://play.google.com/store/apps/details?id=org.ukrzen.bandura" target="_blank">
+       <a href="https://play.google.com/store/apps/details?id=org.ukrzen.bandura" target="_blank" class="device-ios hidden-ios ">
         <img src="./img/google_play.png" class="store">
        </a>
     </div>
 </section>
+
 <section class="meta">
     <header>Можливості</header>
 
-    <div class="flex">
+    <div class="swiper-container ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class=""> <b>Зіграйте</b>
+                    Зіграйте на бандурі прямо у Вас на телефоні.
+                </div>
+                <img src="./img/screenshots/JPEG/characters.png">
+            </div>
+            <div class="swiper-slide"> <div class="">
+                <b>Дізнайтеся</b>
+                Дізнайтеся історію, характеристики, техніку гри та цікаві факти про музичні інструменти.
+            </div>
+                <img src="./img/screenshots/JPEG/kharkiv_bandura.png">
+            </div>
+            <div class="swiper-slide"> <div class="">
+                <b>Послухайте</b>
+                Послухайте цікаві розповіді від відомих бандуристів та почуйте, як звучить інструмент вживу.
+            </div>
+                <img src="./img/screenshots/JPEG/video.jpg"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="flex desktop">
         <div>
           <div class="three-lines"> <b>Зіграйте</b><br>
             Зіграйте на бандурі прямо у Вас на телефоні.
@@ -191,7 +218,11 @@
     <!--</div>-->
 
 <!--</section>-->
-
+<script src="./js/carousel.js"> </script>
+<script src="./js/app.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container');
+</script>
 
 </body>
 </html>
