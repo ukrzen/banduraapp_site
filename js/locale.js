@@ -42,15 +42,15 @@
                 }
                 else {
                     if(language === 'es' && location.pathname ==='/') {
-                        location.pathname = '/es.html';
+                        location.pathname = '/es';
                         return;
                     }
                     if(language === 'pt' && location.pathname ==='/') {
-                        location.pathname = '/pt.html';
+                        location.pathname = '/pt';
                         return;
                     }
                     if(location.pathname ==='/') {
-                        location.pathname = '/en.html';
+                        location.pathname = '/en';
                         return;
                     }
                 }
