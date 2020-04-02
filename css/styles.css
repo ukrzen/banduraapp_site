@@ -238,6 +238,59 @@ footer {
     max-width: 128px;
 
 }
+/* The device with borders */
+.tablet {
+    background: black;
+    position: relative;
+    width: 75vw;
+    height: 85vh;
+    margin: auto;
+    border: 16px rgba(0,0,0,0.9) solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    /*overflow: hidden;*/
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+    /*width: 85vw;*/
+    height: 100%;
+    background: white;
+
+    margin: -1px;
+
+}
 /**
  * Swiper 5.2.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
