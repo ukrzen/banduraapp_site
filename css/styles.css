@@ -12,7 +12,9 @@ body {
 * {
     box-sizing:border-box;
 }
-
+a {
+    color:white;
+}
 section.overview header {
     font-size: 46px;
 }
