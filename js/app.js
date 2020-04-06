@@ -3,11 +3,11 @@ var mobile =false;
 var loaded = false;
 if (navigator.userAgent.match(/(iPad|iPhone|iPod)/i)) {
     classNames.push('device-ios');
-    mobile = false;
+    mobile = true;
 }
 if (navigator.userAgent.match(/android/i))  {
     classNames.push('device-android');
-    mobile = false;
+    mobile = true;
 }
 
 var html = document.getElementsByTagName('html')[0];
