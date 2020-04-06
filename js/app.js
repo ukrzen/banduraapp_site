@@ -19,7 +19,7 @@ window.showIframe = function() {
         return;
     }
     var URL = 'demo';
-    if(mobile ) {
+    if(navigator.userAgent.match(/(iPad|iPhone|iPod)/i) || navigator.userAgent.match(/android/i) ) {
         location.href=URL;
         return;
     }
