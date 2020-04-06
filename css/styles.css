@@ -289,10 +289,23 @@ footer {
 .tablet .content {
     /*width: 85vw;*/
     height: 100%;
-    background: white;
-
+    background: black;
+    cursor: pointer;
     margin: -1px;
 
+}
+.click-to-play {
+    display:block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-64px;
+    margin-top:-64px;
+    width:128px;
+    height:128px;
+}
+.tablet iframe {
+    width:100%;border:none;height:100%;background-color: black;
 }
 /**
  * Swiper 5.2.1
